@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature Overview</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+<script type="text/javascript">
+$(function () {
+    $('#steps_chart').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45,
+                beta: 0
+            }
+        },
+        title: {
+            text: 'Steps',
+            y: 50,
+            style: {
+                fontWeight: 'bold',
+                fontSize: 'large'
+            }
+        },
+        tooltip: {
+            style: {
+                fontWeight: 'bold',
+                color: 'darkcyan'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 35,
+                dataLabels: {
+                    enabled: true,
+                    distance: 15,
+                    format: '<b>{point.name}</b>:<br>{point.percentage:.2f} %',
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'indigo'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Steps',
+            data: [
+                {
+                    selected: true,
+                    sliced: true,
+                    name: 'Passed',
+                    color: "#00A000",
+                    y: 22
+                },
+                {
+                    name: 'Failed',
+                    color: "#FF0000",
+                    y: 0
+                },
+                {
+                    name: 'Skipped',
+                    color: "#88AAFF",
+                    y: 0
+                },
+                {
+                    name: 'Pending',
+                    color: "#FBB907",
+                    y: 0
+                },
+                {
+                    name: 'Undefined',
+                    color: "#FBB957",
+                    y: 0
+                },
+                {
+                    name: 'Missing',
+                    color: "#FBB9A7",
+                    y: 0
+                }
+            ]
+        }]
+    });
+
+
+    $('#scenarios_chart').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'Scenarios',
+            y: 50,
+            style: {
+                fontWeight: 'bold',
+                fontSize: 'large'
+            }
+        },
+        tooltip: {
+            style: {
+                fontWeight: 'bold',
+                color: 'darkcyan'
+            }
+        },
+        plotOptions: {
+            pie: {
+                innerSize: '70%',
+                depth: 35,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    distance: 15,
+                    format: '<b>{point.name}</b>:<br>{point.percentage:.2f} %',
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'indigo'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Scenarios',
+            data: [
+                {
+                    name: 'Passed',
+                    y: 4,
+                    color: "#00A000"
+                },
+                {
+                    selected: true,
+                    sliced: true,
+                    name: 'Failed',
+                    y: 0,
+                    color: "#FF0000"
+                }
+            ]
+        }]
+    });
+
+
+    $('#features_chart').highcharts({
+        chart: {
+            plotShadow: false,
+        },
+        title: {
+            text: 'Features',
+            y: 50,
+            style: {
+                fontWeight: 'bold',
+                fontSize: 'large'
+            }
+        },
+        tooltip: {
+            style: {
+                fontWeight: 'bold',
+                color: 'darkcyan'
+            }
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: 15,
+                    format: '<b>{point.name}</b>:<br>{point.percentage:.2f} %',
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'indigo'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Features',
+            innerSize: '50%',
+            data: [
+                {
+                    name: 'Passed',
+                    y: 2,
+                    color: "#00A000"
+                },
+                {
+                    selected: true,
+                    sliced: true,
+                    name: 'Failed',
+                    y: 0,
+                    color: "#FF0000"
+                }
+            ]
+        }]
+    });
+});
+</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation"  class="active" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>20 Jan 2019, 21:45</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Statistics</h2>
+      <p>The following graph shows passing and failing statistics for features</p>
+  </div>
+
+
+<div class="container-fluid" id="charts">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div id="featureChartCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#featureChartCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#featureChartCarousel" data-slide-to="1"></li>
+          <li data-target="#featureChartCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div id="steps_chart"></div>
+          </div>
+
+          <div class="item">
+            <div id="scenarios_chart"></div>
+          </div>
+    
+          <div class="item">
+            <div id="features_chart"></div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#featureChartCarousel" role="button" data-slide="prev"></span>
+          &lt;
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#featureChartCarousel" role="button" data-slide="next">
+          &gt;
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="container-fluid" id="statistics">
+  <table id="tablesorter" class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+    <tbody>
+    
+      <tr>
+        <td class="tagname"><a id="stats-Smartbox Boxes Display" href="boxesdisplay-feature.html">Smartbox Boxes Display</a></td>
+                <td id="stats-number-scenarios-Smartbox Boxes Display">2</td>
+        <td id="stats-number-scenarios-passed-Smartbox Boxes Display">2</td>
+        <td id="stats-number-scenarios-failed-Smartbox Boxes Display">0</td>
+        <td id="stats-number-steps-Smartbox Boxes Display">10</td>
+        <td id="stats-number-steps-passed-Smartbox Boxes Display">10</td>
+        <td id="stats-number-steps-failed-Smartbox Boxes Display"    >0</td>
+        <td id="stats-number-steps-skipped-Smartbox Boxes Display"   >0</td>
+        <td id="stats-number-steps-pending-Smartbox Boxes Display"   >0</td>
+        <td id="stats-number-steps-undefined-Smartbox Boxes Display" >0</td>
+        <td id="stats-number-steps-missing-Smartbox Boxes Display"   >0</td>
+        <td id="stats-duration-Smartbox Boxes Display" class="duration-format">26s 055ms</td>
+        <td id="stats-status-Smartbox Boxes Display" class="passed">Passed</td>
+      </tr>
+    
+      <tr>
+        <td class="tagname"><a id="stats-Smartbox Shopping cart" href="shoppingcart-feature.html">Smartbox Shopping cart</a></td>
+                <td id="stats-number-scenarios-Smartbox Shopping cart">2</td>
+        <td id="stats-number-scenarios-passed-Smartbox Shopping cart">2</td>
+        <td id="stats-number-scenarios-failed-Smartbox Shopping cart">0</td>
+        <td id="stats-number-steps-Smartbox Shopping cart">12</td>
+        <td id="stats-number-steps-passed-Smartbox Shopping cart">12</td>
+        <td id="stats-number-steps-failed-Smartbox Shopping cart"    >0</td>
+        <td id="stats-number-steps-skipped-Smartbox Shopping cart"   >0</td>
+        <td id="stats-number-steps-pending-Smartbox Shopping cart"   >0</td>
+        <td id="stats-number-steps-undefined-Smartbox Shopping cart" >0</td>
+        <td id="stats-number-steps-missing-Smartbox Shopping cart"   >0</td>
+        <td id="stats-duration-Smartbox Shopping cart" class="duration-format">45s 241ms</td>
+        <td id="stats-status-Smartbox Shopping cart" class="passed">Passed</td>
+      </tr>
+        </tbody>
+
+    <tfoot>
+      <tr>
+        <td id="stats-total-features">2</td>
+                <td id="stats-total-scenarios">4</td>
+        <td id="stats-total-scenarios-passed">4</td>
+        <td id="stats-total-scenarios-failed">0</td>
+        <td id="stats-total-steps">22</td>
+        <td id="stats-total-steps-passed">22</td>
+        <td id="stats-total-steps-failed">0</td>
+        <td id="stats-total-steps-skipped">0</td>
+        <td id="stats-total-steps-pending">0</td>
+        <td id="stats-total-steps-undefined">0</td>
+        <td id="stats-total-steps-missing">0</td>
+        <td id="stats-total-duration" class="duration-format">1m 11s 297ms</td>
+        <td id="stats-total-totals">Totals</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

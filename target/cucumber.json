@@ -1,0 +1,530 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#**************************************************************************"
+      },
+      {
+        "line": 2,
+        "value": "#Author: Jorge Quiros"
+      },
+      {
+        "line": 3,
+        "value": "#Last updated: 01/19/20"
+      },
+      {
+        "line": 4,
+        "value": "#Description: Feature file for boxes display user story"
+      },
+      {
+        "line": 5,
+        "value": "#**************************************************************************"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8847352900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MainPage.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5869998199,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitiliazeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "As a Customer I search in the main field",
+        "description": "",
+        "id": "smartbox-boxes-display;as-a-customer-i-search-in-the-main-field",
+        "after": [
+          {
+            "result": {
+              "duration": 259700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 639492900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I look for specific product \"bistrots\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bistrots",
+                  "offset": 29
+                }
+              ],
+              "location": "MainPage.iLookForSpecificProductInSearchBox(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522753699,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see suggestion for my search",
+            "match": {
+              "location": "MainPage.iShouldSeeSuggestionForMySearch()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8341793900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MainPage.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 504100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitiliazeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "As a Customer I can search in the filter box of sub category page",
+        "description": "",
+        "id": "smartbox-boxes-display;as-a-customer-i-can-search-in-the-filter-box-of-sub-category-page",
+        "after": [
+          {
+            "result": {
+              "duration": 92500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2810140099,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I look for an specific product in the menu",
+            "match": {
+              "location": "MainPage.iLookForAnSpecificProductInTheMenu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129198099,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Subcategory page product page appears",
+            "match": {
+              "location": "SubCategoryPage.subcategoryPageProductPageAppears()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148486401,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should see the filter options",
+            "match": {
+              "location": "SubCategoryPage.iShouldSeeTheFilterOptions()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 828464501,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I search on the box filter for Title \"3 jours de\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3 jours de",
+                  "offset": 38
+                }
+              ],
+              "location": "SubCategoryPage.iSearchOnTheBoxFilterForTitle(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3689124700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on any Box",
+            "match": {
+              "location": "SubCategoryPage.clickOnAnyBoxProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98810700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "A link for review section should appear",
+            "match": {
+              "location": "ProductPage.aLinkForReviewSectionShouldAppear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Smartbox Boxes Display",
+    "description": "As a customer I want to view a list of products so I can select some to purchase",
+    "id": "smartbox-boxes-display",
+    "keyword": "Feature",
+    "uri": "boxesdisplay.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#**************************************************************************"
+      },
+      {
+        "line": 2,
+        "value": "#Author: Jorge Quiros"
+      },
+      {
+        "line": 3,
+        "value": "#Last updated:"
+      },
+      {
+        "line": 4,
+        "value": "#Description: Feature file for add to shopping cart display user story"
+      },
+      {
+        "line": 5,
+        "value": "#**************************************************************************"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9088527300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MainPage.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 156599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitiliazeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "As a Customer I want a desired box and add a title to the cart so I can make adjustments",
+        "description": "",
+        "id": "smartbox-shopping-cart;as-a-customer-i-want-a-desired-box-and-add-a-title-to-the-cart-so-i-can-make-adjustments",
+        "after": [
+          {
+            "result": {
+              "duration": 55100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3159433500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I look for an specific product in the menu",
+            "match": {
+              "location": "MainPage.iLookForAnSpecificProductInTheMenu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139720401,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Subcategory page product page appears",
+            "match": {
+              "location": "SubCategoryPage.subcategoryPageProductPageAppears()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3165115499,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on any Box",
+            "match": {
+              "location": "SubCategoryPage.clickOnAnyBoxProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 431474600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Ajouter au panier",
+            "match": {
+              "location": "ProductPage.iClickOnAjouterAuPanier()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4917184000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "options Continuer mes Achats, Voir le Panier and Vider le Panier appears on the add to cart overlay",
+            "match": {
+              "location": "ProductPage.optionsContinuerMesAchatsVoirLePanierAndViderLePanierAppearsOnTheAddToCartOverlay()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7745368201,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on voir le panier button",
+            "match": {
+              "location": "ProductPage.iClickOnVoirLePanierButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74545299,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see the item on the shopping cart",
+            "match": {
+              "location": "ShoppingCartPage.iShouldSeeTheItemOnTheShoppingCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9593820999,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page",
+            "match": {
+              "location": "MainPage.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 207000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitiliazeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "As a Customer I can remove a product from shopping cart",
+        "description": "",
+        "id": "smartbox-shopping-cart;as-a-customer-i-can-remove-a-product-from-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 42201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5937919900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on add to cart icon",
+            "match": {
+              "location": "ShoppingCartPage.iClickOnAddToCartIcon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 426111701,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I can remove an item from the shopping cart",
+            "match": {
+              "location": "ShoppingCartPage.iCanRemoveAnItemFromTheShoppingCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 562708801,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the product should not appear in the shopping cart",
+            "match": {
+              "location": "ShoppingCartPage.theProductShouldNotAppearInTheShoppingCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Smartbox Shopping cart",
+    "description": "As a Customer I want to find a desired box and add it to the cart so I can make adjustments prior to checkout",
+    "id": "smartbox-shopping-cart",
+    "keyword": "Feature",
+    "uri": "shoppingcart.feature"
+  }
+]

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Step Overview</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>20 Jan 2019, 21:45</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Step Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+
+<div class="container-fluid" id="report-details">
+  <table id="tablesorter" class="stats-table">
+
+    <thead>
+      <tr class="header">
+        <th id="stats-header-feature">Implementation</th>
+        <th id="stats-header-occurrences">Occurrences</th>
+        <th id="stats-header-duration">Duration</th>
+        <th id="stats-header-average">Average</th>
+        <th id="stats-header-status">Ratio</th>
+      </tr>
+    </thead>
+
+    <tbody>
+              <tr>
+                    
+          <td class="tagname">MainPage.iAmOnTheHomePage()</td>
+          <td>4</td>
+          <td class="duration-format">35s 871ms</td>
+          <td class="duration-format">08s 967ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ProductPage.iClickOnVoirLePanierButton()</td>
+          <td>1</td>
+          <td class="duration-format">07s 745ms</td>
+          <td class="duration-format">07s 745ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SubCategoryPage.clickOnAnyBoxProduct()</td>
+          <td>2</td>
+          <td class="duration-format">06s 854ms</td>
+          <td class="duration-format">03s 427ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">MainPage.iLookForAnSpecificProductInTheMenu()</td>
+          <td>2</td>
+          <td class="duration-format">05s 969ms</td>
+          <td class="duration-format">02s 984ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ShoppingCartPage.iClickOnAddToCartIcon()</td>
+          <td>1</td>
+          <td class="duration-format">05s 937ms</td>
+          <td class="duration-format">05s 937ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">Hook.InitiliazeTest(Scenario)</td>
+          <td>4</td>
+          <td class="duration-format">05s 870ms</td>
+          <td class="duration-format">01s 467ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ProductPage.optionsContinuerMesAchatsVoirLePanierAndViderLePanierAppearsOnTheAddToCartOverlay()</td>
+          <td>1</td>
+          <td class="duration-format">04s 917ms</td>
+          <td class="duration-format">04s 917ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SubCategoryPage.iSearchOnTheBoxFilterForTitle(String)</td>
+          <td>1</td>
+          <td class="duration-format">828ms</td>
+          <td class="duration-format">828ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">MainPage.iLookForSpecificProductInSearchBox(String)</td>
+          <td>1</td>
+          <td class="duration-format">639ms</td>
+          <td class="duration-format">639ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ShoppingCartPage.theProductShouldNotAppearInTheShoppingCart()</td>
+          <td>1</td>
+          <td class="duration-format">562ms</td>
+          <td class="duration-format">562ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">MainPage.iShouldSeeSuggestionForMySearch()</td>
+          <td>1</td>
+          <td class="duration-format">522ms</td>
+          <td class="duration-format">522ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ProductPage.iClickOnAjouterAuPanier()</td>
+          <td>1</td>
+          <td class="duration-format">431ms</td>
+          <td class="duration-format">431ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ShoppingCartPage.iCanRemoveAnItemFromTheShoppingCart()</td>
+          <td>1</td>
+          <td class="duration-format">426ms</td>
+          <td class="duration-format">426ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SubCategoryPage.subcategoryPageProductPageAppears()</td>
+          <td>2</td>
+          <td class="duration-format">268ms</td>
+          <td class="duration-format">134ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">SubCategoryPage.iShouldSeeTheFilterOptions()</td>
+          <td>1</td>
+          <td class="duration-format">148ms</td>
+          <td class="duration-format">148ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ProductPage.aLinkForReviewSectionShouldAppear()</td>
+          <td>1</td>
+          <td class="duration-format">098ms</td>
+          <td class="duration-format">098ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ShoppingCartPage.iShouldSeeTheItemOnTheShoppingCart()</td>
+          <td>1</td>
+          <td class="duration-format">074ms</td>
+          <td class="duration-format">074ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">Hook.TearDownTest(Scenario)</td>
+          <td>4</td>
+          <td class="duration-format">000ms</td>
+          <td class="duration-format">000ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+          </tbody>
+
+    <tfoot>
+      <tr>
+        <td>18</td>
+        <td>30</td>
+        <td class="duration-format">1m 17s 168ms</td>
+        <td class="duration-format">02s 572ms</td>
+        <td>Totals</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

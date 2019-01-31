@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Smartbox Boxes Display </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>20 Jan 2019, 21:45</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Smartbox Boxes Display" href="boxesdisplay-feature.html">Smartbox Boxes Display</a></td>
+            <td id="stats-number-scenarios-Smartbox Boxes Display">2</td>
+      <td id="stats-number-scenarios-passed-Smartbox Boxes Display">2</td>
+      <td id="stats-number-scenarios-failed-Smartbox Boxes Display">0</td>
+      <td id="stats-number-steps-Smartbox Boxes Display">10</td>
+      <td id="stats-number-steps-passed-Smartbox Boxes Display">10</td>
+      <td id="stats-number-steps-failed-Smartbox Boxes Display"    >0</td>
+      <td id="stats-number-steps-skipped-Smartbox Boxes Display"   >0</td>
+      <td id="stats-number-steps-pending-Smartbox Boxes Display"   >0</td>
+      <td id="stats-number-steps-undefined-Smartbox Boxes Display" >0</td>
+      <td id="stats-number-steps-missing-Smartbox Boxes Display"   >0</td>
+      <td id="stats-duration-Smartbox Boxes Display" class="duration-format">26s 055ms</td>
+      <td id="stats-status-Smartbox Boxes Display" class="passed">Passed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="passed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Smartbox Boxes Display
+    </div>
+  </div>
+  <div class="feature-description">As a customer I want to view a list of products so I can select some to purchase</div>
+
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">08s 847ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="smoke.html">@smoke</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>Hook.InitiliazeTest(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I search in the main field</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I look for specific product &quot;bistrots&quot; in search box</span><span class="step-duration">639ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I should see suggestion for my search</span><span class="step-duration">522ms</span></div>
+      
+            <div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>Hook.TearDownTest(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">08s 341ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="smoke.html">@smoke</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>Hook.InitiliazeTest(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I can search in the filter box of sub category page</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I look for an specific product in the menu</span><span class="step-duration">02s 810ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">Subcategory page product page appears</span><span class="step-duration">129ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I should see the filter options</span><span class="step-duration">148ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I search on the box filter for Title &quot;3 jours de&quot;</span><span class="step-duration">828ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Click on any Box</span><span class="step-duration">03s 689ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">A link for review section should appear</span><span class="step-duration">098ms</span></div>
+      
+            <div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>Hook.TearDownTest(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="78063" started-at="2019-01-21T03:44:27Z" finished-at="2019-01-21T03:45:46Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@35fb3008]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="78063" started-at="2019-01-21T03:44:27Z" finished-at="2019-01-21T03:45:46Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@35fb3008]" name="setUpClass" is-config="true" duration-ms="475" started-at="2019-01-20T21:44:27Z" finished-at="2019-01-20T21:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@35fb3008]" name="feature" duration-ms="32059" started-at="2019-01-20T21:44:28Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-20T21:45:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smartbox Boxes Display]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@35fb3008]" name="feature" duration-ms="45278" started-at="2019-01-20T21:45:00Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-20T21:45:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smartbox Shopping cart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@35fb3008]" name="tearDownClass" is-config="true" duration-ms="136" started-at="2019-01-20T21:45:45Z" finished-at="2019-01-20T21:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:runner.TestRunner@35fb3008]" name="tearDown" is-config="true" duration-ms="2842" started-at="2019-01-20T21:45:46Z" finished-at="2019-01-20T21:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

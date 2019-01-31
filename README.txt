@@ -2,6 +2,8 @@
 
 Selenium Java testing public Smartbox Franch site, using Java, Selenium, POM, TestNG, Cucumber,
 Singleton, dependecy injection and Cucumber reports.
+
+Note: Test results may vary as the website tends to change a lot.
 ===========================
 
 Author: Jorge Quiros Torres
@@ -43,7 +45,8 @@ How to install and run the project
 Updates
 -------
 v1.2:
-- Adding support for Java 10
-- Updating Selenium to the lastest version
-- Adding support for testNG.xml to call test runner.
+- Adding support for Java 11 (for var support)
+- Updating Selenium to the latest version 3.141.59
+- Adding support for testNG.xml to run from testng and not directly from testRunner. The idea is to have listeners
+  and pretty cool stuff added.
 

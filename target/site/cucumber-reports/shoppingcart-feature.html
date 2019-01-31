@@ -54,7 +54,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>cucumber-jvm-example</td>
                           <td>42</td>
-                        <td>20 Jan 2019, 21:45</td>
+                        <td>31 Jan 2019, 09:26</td>
           </tr>
         </tbody>
       </table>
@@ -97,17 +97,17 @@ $(document).ready(function() {
         <tr>
       <td class="tagname"><a id="stats-Smartbox Shopping cart" href="shoppingcart-feature.html">Smartbox Shopping cart</a></td>
             <td id="stats-number-scenarios-Smartbox Shopping cart">2</td>
-      <td id="stats-number-scenarios-passed-Smartbox Shopping cart">2</td>
-      <td id="stats-number-scenarios-failed-Smartbox Shopping cart">0</td>
+      <td id="stats-number-scenarios-passed-Smartbox Shopping cart">0</td>
+      <td id="stats-number-scenarios-failed-Smartbox Shopping cart">2</td>
       <td id="stats-number-steps-Smartbox Shopping cart">12</td>
-      <td id="stats-number-steps-passed-Smartbox Shopping cart">12</td>
-      <td id="stats-number-steps-failed-Smartbox Shopping cart"    >0</td>
-      <td id="stats-number-steps-skipped-Smartbox Shopping cart"   >0</td>
+      <td id="stats-number-steps-passed-Smartbox Shopping cart">0</td>
+      <td id="stats-number-steps-failed-Smartbox Shopping cart"      class="failed" >2</td>
+      <td id="stats-number-steps-skipped-Smartbox Shopping cart"      class="skipped" >10</td>
       <td id="stats-number-steps-pending-Smartbox Shopping cart"   >0</td>
       <td id="stats-number-steps-undefined-Smartbox Shopping cart" >0</td>
       <td id="stats-number-steps-missing-Smartbox Shopping cart"   >0</td>
-      <td id="stats-duration-Smartbox Shopping cart" class="duration-format">45s 241ms</td>
-      <td id="stats-status-Smartbox Shopping cart" class="passed">Passed</td>
+      <td id="stats-duration-Smartbox Shopping cart" class="duration-format">03s 307ms</td>
+      <td id="stats-status-Smartbox Shopping cart" class="failed">Failed</td>
     </tr>
   </table>
 </div>
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 <div class="container-fluid" id="report-details">
   <div class="feature-tags"></div>
-  <div class="passed">
+  <div class="failed">
     <div class="feature-line">
       <span class="feature-keyword">Feature: </span>Smartbox Shopping cart
     </div>
@@ -124,8 +124,8 @@ $(document).ready(function() {
 
       <div class="feature-tags"></div>
     
-    <div class="passed"><span class="element-keyword">Background: </span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">09s 088ms</span></div>
+    <div class="failed"><span class="element-keyword">Background: </span></div>
+          <div class="failed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">01s 540ms</span><div class="output_message"><input class="output_collapse" id="output_535910992" type="checkbox"><label for="output_535910992">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1198, 629)</label><div>  (Session info: chrome=71.0.3578.98)<br/>  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>Command duration or timeout: 0 milliseconds<br/>Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'<br/>System info: host: 'DESKTOP-48K146D', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'<br/>Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\jorge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60427}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}<br/>Session ID: bb6f38482e835fda871c083f868bcb23<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br/>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br/>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br/>	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br/>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br/>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br/>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br/>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br/>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br/>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.lang.reflect.Method.invoke(Method.java:498)<br/>	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br/>	at com.sun.proxy.$Proxy20.click(Unknown Source)<br/>	at pages.Home.CheckHomePage(Home.java:67)<br/>	at steps.MainPage.iAmOnTheHomePage(MainPage.java:32)<br/>	at ✽.Given I am on the home page(shoppingcart.feature:11)<br/></div></div></div>
       
             <div></div>
       <div></div>
@@ -133,32 +133,32 @@ $(document).ready(function() {
     <br>
       <div class="feature-tags"><a href="smoke.html">@smoke</a></div>
     <div class="passed"><span class="step-keyword">Before </span><i>Hook.InitiliazeTest(Scenario)</i><span class="step-duration"></span></div>
-    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I want a desired box and add a title to the cart so I can make adjustments</span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I look for an specific product in the menu</span><span class="step-duration">03s 159ms</span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I want a desired box and add a title to the cart so I can make adjustments</span></div>
+          <div class="skipped"><span class="step-keyword">Given  </span><span class="step-name">I look for an specific product in the menu</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">Subcategory page product page appears</span><span class="step-duration">139ms</span></div>
+          <div class="skipped"><span class="step-keyword">When  </span><span class="step-name">Subcategory page product page appears</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Click on any Box</span><span class="step-duration">03s 165ms</span></div>
+          <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">Click on any Box</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I click on Ajouter au panier</span><span class="step-duration">431ms</span></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">I click on Ajouter au panier</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">options Continuer mes Achats, Voir le Panier and Vider le Panier appears on the add to cart overlay</span><span class="step-duration">04s 917ms</span></div>
+          <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">options Continuer mes Achats, Voir le Panier and Vider le Panier appears on the add to cart overlay</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I click on voir le panier button</span><span class="step-duration">07s 745ms</span></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">I click on voir le panier button</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I should see the item on the shopping cart</span><span class="step-duration">074ms</span></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">I should see the item on the shopping cart</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
@@ -166,8 +166,8 @@ $(document).ready(function() {
     <br>
       <div class="feature-tags"></div>
     
-    <div class="passed"><span class="element-keyword">Background: </span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">09s 593ms</span></div>
+    <div class="failed"><span class="element-keyword">Background: </span></div>
+          <div class="failed"><span class="step-keyword">Given  </span><span class="step-name">I am on the home page</span><span class="step-duration">01s 767ms</span><div class="output_message"><input class="output_collapse" id="output_1607277663" type="checkbox"><label for="output_1607277663">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1198, 606)</label><div>  (Session info: chrome=71.0.3578.98)<br/>  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>Command duration or timeout: 0 milliseconds<br/>Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'<br/>System info: host: 'DESKTOP-48K146D', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'<br/>Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\jorge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60427}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}<br/>Session ID: bb6f38482e835fda871c083f868bcb23<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br/>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br/>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br/>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br/>	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br/>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br/>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br/>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br/>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br/>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br/>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.lang.reflect.Method.invoke(Method.java:498)<br/>	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br/>	at com.sun.proxy.$Proxy20.click(Unknown Source)<br/>	at pages.Home.CheckHomePage(Home.java:67)<br/>	at steps.MainPage.iAmOnTheHomePage(MainPage.java:32)<br/>	at ✽.Given I am on the home page(shoppingcart.feature:11)<br/></div></div></div>
       
             <div></div>
       <div></div>
@@ -175,16 +175,16 @@ $(document).ready(function() {
     <br>
       <div class="feature-tags"><a href="smoke.html">@smoke</a></div>
     <div class="passed"><span class="step-keyword">Before </span><i>Hook.InitiliazeTest(Scenario)</i><span class="step-duration"></span></div>
-    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I can remove a product from shopping cart</span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I click on add to cart icon</span><span class="step-duration">05s 937ms</span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">As a Customer I can remove a product from shopping cart</span></div>
+          <div class="skipped"><span class="step-keyword">Given  </span><span class="step-name">I click on add to cart icon</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I can remove an item from the shopping cart</span><span class="step-duration">426ms</span></div>
+          <div class="skipped"><span class="step-keyword">When  </span><span class="step-name">I can remove an item from the shopping cart</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the product should not appear in the shopping cart</span><span class="step-duration">562ms</span></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">the product should not appear in the shopping cart</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>

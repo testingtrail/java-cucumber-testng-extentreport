@@ -23,6 +23,7 @@ public class DriverHandler {
         this.driver = new ChromeDriver();
         this.driver.manage().window().maximize();
         this.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     }
 
     //Here is where the singleton pattern is applied, if the instance is null then call constructor

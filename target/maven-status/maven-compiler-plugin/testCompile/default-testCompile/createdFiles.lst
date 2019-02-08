@@ -1,7 +1,0 @@
-steps\ShoppingCartPage.class
-steps\Hook.class
-steps\ProductPage.class
-steps\SubCategoryPage.class
-base\DriverHandler.class
-runner\TestRunner.class
-steps\MainPage.class

@@ -15,6 +15,8 @@ import org.openqa.selenium.WebDriver;
 
 public class Hook{
 
+
+
     private WebDriver driver;
     public Scenario scenario;
 
@@ -24,7 +26,6 @@ public class Hook{
 
     @Before
     public void InitiliazeTest(Scenario scenario){
-
         System.out.println("Running Scenario: " + scenario.getName());
 
         // Here Singleton pattern is being used, to avoid opening a new browser each time a scenario runs

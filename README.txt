@@ -50,3 +50,6 @@ v1.2:
 - Adding support for testNG.xml to run from testng and not directly from testRunner. The idea is to have listeners
   and pretty cool stuff added.
 
+v1.3
+- Adding test listeners and calss ngTestListener.java
+

@@ -17,6 +17,7 @@ public class DriverHandler {
     private WebDriver driver;
     private static DriverHandler _driverHandler;
 
+
     private DriverHandler() {
         String driverpath = new File("").getAbsolutePath();
         System.setProperty("webdriver.chrome.driver", driverpath + "\\drivers\\chromedriver.exe");

@@ -4,6 +4,7 @@
 #Description: Feature file for add to shopping cart display user story
 #**************************************************************************
 
+@skipped_temporal
 Feature: Smartbox Shopping cart
   As a Customer I want to find a desired box and add it to the cart so I can make adjustments prior to checkout
 

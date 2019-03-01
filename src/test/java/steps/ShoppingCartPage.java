@@ -7,6 +7,7 @@
 
 package steps;
 
+import com.aventstack.extentreports.GherkinKeyword;
 import cucumber.api.java.en.*;
 
 import org.openqa.selenium.WebDriver;
@@ -42,7 +43,6 @@ public class ShoppingCartPage {
 
     @Then("^the product should not appear in the shopping cart$")
     public void theProductShouldNotAppearInTheShoppingCart() throws Throwable {
-
         boolean removed = true;
         if(!shoppingcart.ElementRemoved()) {
             removed = false;

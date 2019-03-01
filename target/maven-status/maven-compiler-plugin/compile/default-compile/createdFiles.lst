@@ -7,3 +7,4 @@ pages\SubCategory.class
 utils\Utils.class
 pages\Home.class
 pages\SubCategory$1.class
+resources\ConfigFileReader.class

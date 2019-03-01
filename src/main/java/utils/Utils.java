@@ -6,8 +6,12 @@
 
 package utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.FluentWait;
+
+import java.util.concurrent.TimeUnit;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class Utils {
 
@@ -54,11 +58,11 @@ public class Utils {
     }
  
      /*************************************************************
-     Description: Attach an screenshot, with allure attachment tag
+     Description: Attach an screenshot, with allure attachment tag if needed in future
      Paramaters: webdriver
      Return: NA
      ***********************************************************/
-    @Attachment( type = "image/png")
+    //@Attachment( type = "image/png")
     public static  byte[] screenShot(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }

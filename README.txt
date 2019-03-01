@@ -39,8 +39,12 @@ How to install and run the project
     c. Edit Windows environment variables, Path: C:\Libs\apache-maven-3.5.4\bin
     d. Check maven: mvn -version in CMD
 3. Double click in file called 'executable.bat' located in root of the project
-4. Check folder 'target\cucumber-report-html\cucumber-reports' and open
-   the file 'feature-overview.html' in order to see the results of the test.
+4. Reports - There are two kind of reports
+    A. Cucumber: Check folder 'target\cucumber-report-html\cucumber-reports' and open
+        the file 'feature-overview.html' in order to see the results of the test. Note: In order to see
+        this report mvn verify has to be executed as it is part of phase in maven file, if you run the
+        app from testNG or testRunner file you won't see it.
+    B. Extent: Check folder report in order to see Extent report as alternative for cucumber report.
 
 Updates
 -------
@@ -51,5 +55,5 @@ v1.2:
   and pretty cool stuff added.
 
 v1.3
-- Adding test listeners and calss ngTestListener.java
+- Adding test listeners and class ngTestListener.java
 

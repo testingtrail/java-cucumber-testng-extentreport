@@ -59,10 +59,10 @@ public class Home {
         if(isPresent) {
             ExpectedCondition e = new ExpectedCondition<Boolean>() {
                 public Boolean apply(WebDriver d) {
-                    return (linkCookies.getSize().height > 10);
+                    return (linkCookies.getSize().height > 11);
                 }
             };
-            WebDriverWait wait = (new WebDriverWait(driver, 10));
+            WebDriverWait wait = (new WebDriverWait(driver, 5));
             wait.until(e);
             linkCookies.click();
         }

@@ -3,35 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="930feb87-7c27-4753-a7c6-3b693ff0e036" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CucumberBasics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberBasics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/shoppingcart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/shoppingcart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/screenshots/As_a_Customer_I_can_search_in_the_filter_box_of_sub_category_page.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/screenshots/As_a_Customer_I_can_search_in_the_filter_box_of_sub_category_page.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/screenshots/As_a_Customer_I_search_in_the_main_field.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/screenshots/As_a_Customer_I_search_in_the_main_field.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/ngTestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/ngTestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ShoppingCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/Home$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/Home$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/jquery-1.8.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/jquery-1.8.2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/DriverHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/DriverHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/CucumberBasics.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/ngTestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/ngTestListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/Hook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/Hook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/ShoppingCartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/ShoppingCartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test evidence/allPassed1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test evidence/allPassed2.PNG" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,20 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner/ngTestListener.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1746#1747#0" expanded="true" />
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#2018#2019#0" expanded="true" />
-                <element signature="e#2064#2065#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -64,31 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2101#2102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="43" selection-start-column="43" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/ConfigFileReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state relative-caret-position="68">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,37 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/extent-config.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/Hook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="58" column="56" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="56" />
+            <state relative-caret-position="119">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -188,12 +108,12 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/ProductPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/ShoppingCartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/SubCategoryPage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/resources/ConfigFileReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/ngTestListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/Hook.java" />
         <option value="$PROJECT_DIR$/config/config.properties" />
         <option value="$PROJECT_DIR$/config/extent-config.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" />
       </list>
     </option>
@@ -271,6 +191,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberBasics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_Selenium_cucumber_testNG" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="steps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -280,7 +208,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551408770485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551410215419" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -428,9 +356,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_jorge_Desktop_Work_Code_Mine_Java_testNG_xml - 2019.02.28 at 19h 47m 18s.xml">
-      <configuration name="C:/Users/jorge/Desktop/Work/Code/Mine/Java/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_jorge_Desktop_Work_Code_Mine_Java_testNG_xml - 2019.02.28 at 19h 50m 12s.xml">
       <configuration name="C:/Users/jorge/Desktop/Work/Code/Mine/Java/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -458,12 +383,15 @@
     <history-entry file="C__Users_jorge_Desktop_Work_Code_Mine_Java_testNG_xml - 2019.02.28 at 20h 45m 18s.xml">
       <configuration name="C:/Users/jorge/Desktop/Work/Code/Mine/Java/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_jorge_Desktop_Work_Code_Mine_Java_testNG_xml - 2019.02.28 at 20h 53m 14s.xml">
+      <configuration name="C:/Users/jorge/Desktop/Work/Code/Mine/Java/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="703" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,12 +400,12 @@
       <window_info id="aws.explorer" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39298245" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39298245" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982456" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32807016" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32807016" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32807016" />
@@ -670,17 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar!/cucumber/runtime/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -766,20 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Opta/iClarify_Automation/src/main/java/base/WebDriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -801,6 +704,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="526" selection-start-line="526" selection-end-line="526" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Hook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/extent-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/ConfigFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -811,10 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-sources.jar!/org/testng/internal/Invoker.java">
+    <entry file="file://$PROJECT_DIR$/config/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="526" selection-start-line="526" selection-end-line="526" />
+        <state>
+          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -835,17 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Hook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="58" column="56" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="56" />
+        <state relative-caret-position="119">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -853,21 +781,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/extent-config.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="174">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="68">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
           </folding>
         </state>
       </provider>

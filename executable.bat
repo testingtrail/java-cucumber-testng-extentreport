@@ -1,1 +1,1 @@
-call mvn test verify
+call mvn clean verify

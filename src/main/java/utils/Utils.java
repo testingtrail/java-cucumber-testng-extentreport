@@ -1,72 +1,132 @@
-/****************************************************************************
- Author: Jorge Quiros
- Last updated: 01/18/19
- Description: Class to handle util functions across the solution
- ***************************************************************************/
+/*********************************************************************************
+ * Created by: Jorge Quiros
+ * Description: Class with some utilities, static.
+ *
+ * Modified: Jorge Quiros - 03-11-19
+ * Change description: Adding method to check whether an element is visible or not,
+ *  without throwing exception, adding method to check if file is downloaded
+ *  *********************************************************************************/
 
 package utils;
 
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.FluentWait;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.comparison.ImageDiff;
+import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.*;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class Utils {
 
-     /*************************************************************
+    /*************************************************************
      Description: Checks if an element exists using locator
-     Paramaters: webdriver, the locator
+     Parameters: webdriver, locator
      Return: boolean
      ***********************************************************/
     public static boolean existsElement (WebDriver driver, By locator){
-            try {
-                driver.findElement(locator);
-            } catch (Exception e) {
-               return false;
-            }
+        try {
+            driver.findElement(locator);
+        } catch (Exception e) {
+            return false;
+        }
         return true;
     }
- 
+
+
     /*************************************************************
      Description: Checks if an element is visible or not, so for instance an element that is in the DOM
-        but may be or not present depending on conditions
-     Paramaters: webdriver, time in seconds to wait, locator
+     but may be or not present depending on conditions
+     Parameters: webdriver, time in seconds to wait, locator
      Return: element if found, if not returns null
      ***********************************************************/
     public static WebElement visibleOrNot(WebDriver driver, int timeToWait, By locator) {
         WebElement element = null;
         try {
             element = new FluentWait<>(driver).
-                    withTimeout(timeToWait, TimeUnit.SECONDS).
-                    pollingEvery(1, TimeUnit.SECONDS).
+                    withTimeout(Duration.ofSeconds(timeToWait)).
+                    pollingEvery(Duration.ofSeconds(1)).
                     ignoring(NotFoundException.class).ignoring(NoSuchElementException.class).
                     until(visibilityOfElementLocated(locator));
         } catch (TimeoutException ex) {}
         return element;
     }
- 
+
     /*************************************************************
      Description: Clicks an element using Javascript
-     Paramaters: driver, webelement to click
+     Parameters: driver, webelement to click
      Return: NA
      ***********************************************************/
     public static void clickElementThroughJavaScript(WebDriver driver, WebElement element){
         //To Click on elements which may not be visible on screen
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
     }
- 
-     /*************************************************************
-     Description: Attach an screenshot, with allure attachment tag if needed in future
+
+    /*************************************************************
+     Description: Takes an screenshot for a specific locator and save it
+     Paramaters: driver as webdriver, locator as webelement, image name as String
+     Return: NA
+     ***********************************************************/
+    public static void screenshotLocatorWrite(WebDriver driver, WebElement element, String imageName){
+        try {
+            Screenshot screenshot = new AShot().takeScreenshot(driver, element);
+            ImageIO.write(screenshot.getImage(), "PNG",
+                    new File(System.getProperty("user.dir") + "/images/" + imageName + "png"));
+        }catch (IOException e){
+            System.out.println("OPTA: Not able to take screenshot locator - " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    /*************************************************************
+     Description: compares two images, one saved and another one taken from selector
+     Parameters: driver as webdriver, saved images as String, locator as web element
+     Return: images difference as boolean
+     ***********************************************************/
+    public static boolean compareImages(WebDriver driver, String savedImage, WebElement locator){
+        try {
+            //get the saved image, the expected one
+            BufferedImage expectedSatellite =
+                    ImageIO.read(new File(System.getProperty("user.dir")+"/images/"+ savedImage +".png"));
+
+            //take the new screenshot
+            Screenshot screenshot = new AShot().takeScreenshot(driver, locator);
+            BufferedImage actualSatellite = screenshot.getImage();
+
+            //compare both images
+            ImageDiffer imgDiff = new ImageDiffer();
+            ImageDiff diff = imgDiff.makeDiff(expectedSatellite,actualSatellite);
+
+            return diff.hasDiff();
+
+        }catch (IOException e){
+            System.out.println("OPTA: Not able to compare images - " + e.getMessage());
+            e.printStackTrace();
+
+            return true;
+        }
+    }
+
+    /*************************************************************
+     Description: Attach an screenshot, with allure attachment tag
      Paramaters: webdriver
      Return: NA
      ***********************************************************/
-    //@Attachment( type = "image/png")
+    @Attachment( type = "image/png")
     public static  byte[] screenShot(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
+
 
     /*************************************************************
      Description: returns a file name given a directory and extension
@@ -80,7 +140,7 @@ public class Utils {
         boolean found = false;
 
         //default timeout in seconds
-        long timeOut = 40;
+        long timeOut = 60;
         try
         {
             //set the path
@@ -95,7 +155,7 @@ public class Utils {
                 WatchKey watchKey;
                 watchKey = watchService.poll(timeOut,TimeUnit.SECONDS);
                 long currentTime = (System.currentTimeMillis()-startTime)/1000;
-                //check if 40 seconds already passed
+                //check if 60 seconds already passed
                 if(currentTime>timeOut)
                 {
                     System.out.println("OPTA: Download operation timed out... Expected file was not downloaded");

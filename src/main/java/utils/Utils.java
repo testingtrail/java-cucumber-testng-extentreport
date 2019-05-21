@@ -81,7 +81,7 @@ public class Utils {
         try {
             Screenshot screenshot = new AShot().takeScreenshot(driver, element);
             ImageIO.write(screenshot.getImage(), "PNG",
-                    new File(System.getProperty("user.dir") + "/images/" + imageName + "png"));
+                    new File(System.getProperty("user.dir") + "/images/" + imageName + ".png"));
         }catch (IOException e){
             System.out.println("OPTA: Not able to take screenshot locator - " + e.getMessage());
             e.printStackTrace();

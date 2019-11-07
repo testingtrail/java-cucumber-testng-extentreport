@@ -1,16 +1,16 @@
-# smartbox_french_seleniumtest
+Smartbox french site testing
+=====================
 
 Selenium Java testing public Smartbox Franch site, using Java, Selenium, POM, TestNG, Cucumber,
 Singleton, dependecy injection and Cucumber reports.
 
 Note: Test results may vary as the website tends to change a lot.
-===========================
 
 Author: Jorge Quiros Torres
 Date: 01/20/19
 
-AUTOMATION TEST CASES
-=====================
+Testing notes
+------------
 * Code was implemented using Intellij IDEA.
 * Programming Language: Java (Java 8 is being used.)
 * Selenium is being used for automation actions.

@@ -9,6 +9,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -19,11 +20,12 @@ public class DriverHandler {
 
 
     private DriverHandler() {
-        String driverpath = new File("").getAbsolutePath();
-        System.setProperty("webdriver.chrome.driver", driverpath + "\\drivers\\chromedriver.exe");
-        this.driver = new ChromeDriver();
-        this.driver.manage().window().maximize();
-        this.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //String driverpath = new File("").getAbsolutePath();
+        System.setProperty("webdriver.chrome.driver", "C:\\Libs\\drivers\\chromedriver.exe");
+        //something is happening that the next like is throwing an error
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 

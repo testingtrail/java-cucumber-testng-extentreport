@@ -36,8 +36,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -47,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 28, 2019 09:15:34 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 6, 2019 05:37:55 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,9 +60,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+										<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -120,7 +116,7 @@
                     <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
                 </div>
             </div>
         </div>
@@ -131,10 +127,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> others
                 </div>
             </div>
         </div>
@@ -145,10 +141,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>8</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>10</span> others
                 </div>
             </div>
         </div>
@@ -166,11 +162,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Smartbox Boxes Display</span>
-						<span class='test-time'>Feb 28, 2019 09:15:38 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 6, 2019 05:37:55 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -179,114 +175,64 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='skip'>
     <div class='category-list'>
         <span class='category label'>@smoke</span>
     </div>
-    <span class='duration right label'>0h 0m 10s+872ms</span>
+    <span class='duration right label'>0h 0m 0s+16ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: As a Customer I search in the main field</div>
+        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: As a Customer I search in the main field</div>
     </div>
     <ul class='steps'>
-        <li test-id='3' class='node given pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the home page</div>
-                <div class="node-step">passed</div>
+        <li test-id='3' class='node given skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I am on the home page</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='4' class='node when pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I look for specific product "bistrots" in search box</div>
-                <div class="node-step">passed</div>
+        <li test-id='4' class='node when skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When I look for specific product "bistrots" in search box</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='5' class='node then pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see suggestion for my search</div>
-                <div class="node-step">passed</div>
+        <li test-id='5' class='node then skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then I should see suggestion for my search</div>
+                <div class="node-step">skipped</div>
         </li>
     </ul>
 </div>
-<div class='scenario node' test-id='6' status='fail'>
+<div class='scenario node' test-id='6' status='skip'>
     <div class='category-list'>
         <span class='category label'>@smoke</span>
     </div>
-    <span class='duration right label'>0h 0m 9s+143ms</span>
+    <span class='duration right label'>0h 0m 0s+11ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: As a Customer I can search in the filter box of sub category page</div>
+        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: As a Customer I can search in the filter box of sub category page</div>
     </div>
     <ul class='steps'>
-        <li test-id='7' class='node given pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the home page</div>
-                <div class="node-step">passed</div>
+        <li test-id='7' class='node given skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I am on the home page</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='8' class='node given pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I look for an specific product in the menu</div>
-                <div class="node-step">passed</div>
+        <li test-id='8' class='node given skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I look for an specific product in the menu</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='9' class='node when pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Subcategory page product page appears</div>
-                <div class="node-step">passed</div>
+        <li test-id='9' class='node when skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Subcategory page product page appears</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='10' class='node then pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see the filter options</div>
-                <div class="node-step">passed</div>
+        <li test-id='10' class='node then skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then I should see the filter options</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='11' class='node and pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I search on the box filter for Title "3 jours de"</div>
-                <div class="node-step">passed</div>
+        <li test-id='11' class='node and skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I search on the box filter for Title "3 jours de"</div>
+                <div class="node-step">skipped</div>
         </li>
-        <li test-id='12' class='node and fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And Click on any Box</div>
-                <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: Element <a class="thematic__wrapper-link" data-bind="attr:{
-        'href': box_url,
-        'data-product-impression': sku,
-        'data-product-id': sku,
-        'data-product-name': name,
-        'data-product-price': $root.formatNumber(special_price),
-        'data-product-pricerange': $root.getGTMPriceRange(special_price),
-        'data-product-discounted': $root.hasDiscountedPrice($data),
-        'data-product-value': $root.formatNumber(price),
-        'data-product-discountamount': $root.formatNumber(price) - $root.formatNumber(special_price),
-        'data-product-discountamountrange': $root.getGTMDiscountRange($data),
-        'data-product-brand': $root.getBrand(),
-        'data-product-category': '',
-        'data-product-boxtype': $root.getGTMBoxType($data),
-        'data-product-reviewrating': rating
-    }" href="https://www.smartbox.com/fr/nos-smartbox/sejour/y606-3-jours-de-reve-amoure.html" data-product-impression="Y606" data-product-id="Y606" data-product-name="3 jours de rêve en amoureux" data-product-price="119.90" data-product-pricerange="101-150" data-product-discounted="No" data-product-value="119.90" data-product-discountamount="0" data-product-discountamountrange="0.00" data-product-brand="Smartbox" data-product-category="" data-product-boxtype="Classic" data-product-reviewrating="8,2">...</a> is not clickable at point (486, 287). Other element would receive the click: <form id="search-page" class="custom row search-result search-view" data-applybinding="vmSearchPageViewModel" data-binding-options="{&quot;showThemeBlock&quot;:null,&quot;showMapBlock&quot;:&quot;-1&quot;,&quot;showPriceBlock&quot;:null,&quot;showBoxTypeBlock&quot;:null,&quot;showNumberNightsBlock&quot;:null,&quot;showNumberPeopleBlock&quot;:&quot;-1&quot;,&quot;showKeywordBlock&quot;:&quot;1&quot;,&quot;showLinkBlock&quot;:null,&quot;categoriesToShow&quot;:&quot;STA,STA_ROM&quot;,&quot;priceRangesToShow&quot;:&quot;1,2,3&quot;,&quot;boxTypesToShow&quot;:&quot;physical,ebox,excluweb&quot;,&quot;numberNightsToShow&quot;:&quot;1,2&quot;,&quot;numberPeopleToShow&quot;:null,&quot;categoriesToLock&quot;:&quot;STA,STA_ROM&quot;,&quot;priceRangesToLock&quot;:null,&quot;boxTypesToLock&quot;:null,&quot;numberNightsToLock&quot;:null,&quot;numberPeopleToLock&quot;:null,&quot;selectedCategories&quot;:&quot;STA,STA_ROM&quot;,&quot;selectedBoxTypes&quot;:null,&quot;selectedPriceRanges&quot;:null,&quot;selectedNumberNights&quot;:null,&quot;selectedNumberPeople&quot;:null,&quot;priceBlockPosition&quot;:&quot;3&quot;,&quot;mapBlockPosition&quot;:null,&quot;themeBlockPosition&quot;:&quot;5&quot;,&quot;boxTypeBlockPosition&quot;:&quot;4&quot;,&quot;numberNightsBlockPosition&quot;:&quot;2&quot;,&quot;numberPeopleBlockPosition&quot;:null,&quot;keywordBlockPosition&quot;:&quot;1&quot;,&quot;linkBlockTitle&quot;:null,&quot;linkBlockUrl&quot;:null}" data-bind="submit: formSubmitHandler">...</form>
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-48K146D', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\jorge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50184}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 4760e391f6cd6ebbccaef32cf771b88b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at pages.SubCategory.ClickonBox(SubCategory.java:73)
-	at steps.SubCategoryPage.clickOnAnyBoxProduct(SubCategoryPage.java:48)
-	at ?.And Click on any Box(boxesdisplay.feature:24)
-</textarea>
+        <li test-id='12' class='node and skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Click on any Box</div>
+                <div class="node-step">skipped</div>
         </li>
         <li test-id='13' class='node then skip' status='skip'>
             <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then A link for review section should appear</div>
-            <ul class='screenshots right'>
-                <li><a data-featherlight="image" href="C:\Users\jorge\Desktop\Work\Code\Mine\Java_Selenium_cucumber_testNG\report\screenshots\As_a_Customer_I_can_search_in_the_filter_box_of_sub_category_page.png"><i class='material-icons'>panorama</i></a></li>
-            </ul>
                 <div class="node-step">skipped</div>
         </li>
     </ul>
@@ -335,15 +281,14 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 					<div class='category-heading'>
 						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						<span class='label fail'>1</span>
+						<span class='label others'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
+							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -356,14 +301,14 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 28, 2019 09:15:38 PM</td>
+										<td>Nov 6, 2019 05:37:55 PM</td>
 										<td class='linked' test-id='2'>Smartbox Boxes Display.As a Customer I search in the main field</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Feb 28, 2019 09:15:49 PM</td>
+										<td>Nov 6, 2019 05:37:55 PM</td>
 										<td class='linked' test-id='6'>Smartbox Boxes Display.As a Customer I can search in the filter box of sub category page</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -379,175 +324,7 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 28, 2019 09:15:58 PM</td>
-										<td class='linked' test-id='12'>Smartbox Boxes Display.As a Customer I can search in the filter box of sub category page.And Click on any Box</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: Element <a class="thematic__wrapper-link" data-bind="attr:{
-        'href': box_url,
-        'data-product-impression': sku,
-        'data-product-id': sku,
-        'data-product-name': name,
-        'data-product-price': $root.formatNumber(special_price),
-        'data-product-pricerange': $root.getGTMPriceRange(special_price),
-        'data-product-discounted': $root.hasDiscountedPrice($data),
-        'data-product-value': $root.formatNumber(price),
-        'data-product-discountamount': $root.formatNumber(price) - $root.formatNumber(special_price),
-        'data-product-discountamountrange': $root.getGTMDiscountRange($data),
-        'data-product-brand': $root.getBrand(),
-        'data-product-category': '',
-        'data-product-boxtype': $root.getGTMBoxType($data),
-        'data-product-reviewrating': rating
-    }" href="https://www.smartbox.com/fr/nos-smartbox/sejour/y606-3-jours-de-reve-amoure.html" data-product-impression="Y606" data-product-id="Y606" data-product-name="3 jours de rêve en amoureux" data-product-price="119.90" data-product-pricerange="101-150" data-product-discounted="No" data-product-value="119.90" data-product-discountamount="0" data-product-discountamountrange="0.00" data-product-brand="Smartbox" data-product-category="" data-product-boxtype="Classic" data-product-reviewrating="8,2">...</a> is not clickable at point (486, 287). Other element would receive the click: <form id="search-page" class="custom row search-result search-view" data-applybinding="vmSearchPageViewModel" data-binding-options="{&quot;showThemeBlock&quot;:null,&quot;showMapBlock&quot;:&quot;-1&quot;,&quot;showPriceBlock&quot;:null,&quot;showBoxTypeBlock&quot;:null,&quot;showNumberNightsBlock&quot;:null,&quot;showNumberPeopleBlock&quot;:&quot;-1&quot;,&quot;showKeywordBlock&quot;:&quot;1&quot;,&quot;showLinkBlock&quot;:null,&quot;categoriesToShow&quot;:&quot;STA,STA_ROM&quot;,&quot;priceRangesToShow&quot;:&quot;1,2,3&quot;,&quot;boxTypesToShow&quot;:&quot;physical,ebox,excluweb&quot;,&quot;numberNightsToShow&quot;:&quot;1,2&quot;,&quot;numberPeopleToShow&quot;:null,&quot;categoriesToLock&quot;:&quot;STA,STA_ROM&quot;,&quot;priceRangesToLock&quot;:null,&quot;boxTypesToLock&quot;:null,&quot;numberNightsToLock&quot;:null,&quot;numberPeopleToLock&quot;:null,&quot;selectedCategories&quot;:&quot;STA,STA_ROM&quot;,&quot;selectedBoxTypes&quot;:null,&quot;selectedPriceRanges&quot;:null,&quot;selectedNumberNights&quot;:null,&quot;selectedNumberPeople&quot;:null,&quot;priceBlockPosition&quot;:&quot;3&quot;,&quot;mapBlockPosition&quot;:null,&quot;themeBlockPosition&quot;:&quot;5&quot;,&quot;boxTypeBlockPosition&quot;:&quot;4&quot;,&quot;numberNightsBlockPosition&quot;:&quot;2&quot;,&quot;numberPeopleBlockPosition&quot;:null,&quot;keywordBlockPosition&quot;:&quot;1&quot;,&quot;linkBlockTitle&quot;:null,&quot;linkBlockUrl&quot;:null}" data-bind="submit: formSubmitHandler">...</form>
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-48K146D', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\jorge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50184}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 4760e391f6cd6ebbccaef32cf771b88b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at pages.SubCategory.ClickonBox(SubCategory.java:73)
-	at steps.SubCategoryPage.clickOnAnyBoxProduct(SubCategoryPage.java:48)
-	at ?.And Click on any Box(boxesdisplay.feature:24)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='author-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Authors' title='Search Authors'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='author-collection' class='author-collection'>
-				<li class='author displayed active'>
-					<div class='author-heading'>
-						<span class='author-name'>QA-JorgeQuiros</span>
-						<span class='author-status right'>
-						<span class='label pass'>1</span>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='author-content hide'>
-						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='author-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 28, 2019 09:15:38 PM</td>
-										<td class='linked' test-id='2'>Smartbox Boxes Display.As a Customer I search in the main field</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 28, 2019 09:15:49 PM</td>
-										<td class='linked' test-id='6'>Smartbox Boxes Display.As a Customer I can search in the filter box of sub category page</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='author-name'></h5>
-		</div>
-	</div>
-</div>
-<div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -573,19 +350,19 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 28, 2019 09:15:34 PM</div>
+					<div class='panel-lead'>Nov 6, 2019 05:37:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 28, 2019 09:15:59 PM</div>
+			 		<div class='panel-lead'>Nov 6, 2019 05:37:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 24s+268ms</div>
+					<div class='panel-lead'>0h 0m 0s+304ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -602,11 +379,11 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 						</tr>
 						<tr>
 							<td>@smoke</td>
-							<td>1</td>
-							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									50%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -622,37 +399,37 @@ Session ID: 4760e391f6cd6ebbccaef32cf771b88b
 			var statusGroup = {
                 parentCount: 1,
 				passParent: 0,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
+				skipParent: 1,
 				exceptionsParent: 1,
 				childCount: 2,
-				passChild: 1,
-				failChild: 1,
+				passChild: 0,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 2,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				grandChildCount: 10,
-				passGrandChild: 8,
-				failGrandChild: 1,
+				passGrandChild: 0,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 10,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 10,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Smartbox Boxes Display":20.017
+			        "Smartbox Boxes Display":0.034
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

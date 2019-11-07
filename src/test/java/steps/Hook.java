@@ -26,14 +26,14 @@ public class Hook{
     public Scenario scenario;
 
     public WebDriver getDriver(){
-        return this.driver;
+        return DriverHandler.GetInstanceDriverHandler().getDriver();
     }
 
     @Before
     public void InitiliazeTest(Scenario scenario){
         System.out.println("Running Scenario: " + scenario.getName());
 
-        Reporter.assignAuthor("QA - Jorge Quiros");
+        //Reporter.assignAuthor("QA - Jorge Quiros");
 
         // Here Singleton pattern is being used, to avoid opening a new browser each time a scenario runs
         this.scenario = scenario;

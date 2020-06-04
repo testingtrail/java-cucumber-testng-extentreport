@@ -49,7 +49,7 @@ public class Home {
     private WebElement lblmenu;
 
     //submenu item
-    @FindBy(how = How.XPATH, using = "//nav[1]/ul[@id='aut-header-menu']/li[1]/ul/li[2]/a[1]")
+    @FindBy(how = How.XPATH, using = "//li[@class='menu nav-orange show-for-large-up mega-menu-item active']//li[.='Idées cadeaux fête des Mères']")
     private WebElement lblsubmenu;
 
     public void CheckHomePage() throws InterruptedException {

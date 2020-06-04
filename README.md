@@ -11,7 +11,7 @@ Note: Test results may vary as the website tends to change a lot.
 Author: Jorge Quiros Torres
 Date: 01/20/19
 
-Last updated: 03/06/2020
+Last updated: 06/03/2020
 
 Testing notes
 ------------
@@ -28,8 +28,8 @@ Testing notes
 
 
 
-How to install and run the project
-----------------------------------
+How to install and run the project (Windows)
+-------------------------------------------
 1. Download Java
     a. C:\Program Files\Java\jdk1.8.0_181
     b. Edit Windows environment variables, JAVA_HOME: C:\Program Files\Java\jdk1.8.0_181
@@ -42,8 +42,14 @@ How to install and run the project
        MAVEN_HOME, so, it’s safer to add both: C:\Libs\apache-maven-3.5.4
     c. Edit Windows environment variables, Path: C:\Libs\apache-maven-3.5.4\bin
     d. Check maven: mvn -version in CMD
-3. Double click in file called 'executable.bat' located in root of the project
-4. Reports - There are two kind of reports
+    
+How to run
+----------
+1. Windows: Double click in file called 'executable.bat' located in root of the project
+
+2. MAC: open terminal y run 'mvn clean verify'
+
+3. Reports - There are two kind of reports
     A. Cucumber: Check folder 'target\cucumber-report-html\cucumber-reports' and open
         the file 'feature-overview.html' in order to see the results of the test. Note: In order to see
         this report mvn verify has to be executed as it is part of phase in maven file, if you run the
@@ -65,4 +71,7 @@ v1.4
 - Updating pom.xml with dependencies for allure and image comparison needed for utils.java
 - Note: in order to ru.yandex.qatools.ashot to work and allow webdriver to open you need to
   explicitly add selenium webdriver remote dependency
+  
+v1.5 (06-03-2020)
+- fixes to run it on MAC OS
 

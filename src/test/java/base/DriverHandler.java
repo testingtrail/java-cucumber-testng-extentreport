@@ -9,6 +9,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -21,9 +22,12 @@ public class DriverHandler {
 
     private DriverHandler() {
         //String driverpath = new File("").getAbsolutePath();
+        ChromeOptions options = new ChromeOptions();
+        // disable notifications popup
+        options.addArguments("--disable-notifications");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         //something is happening that the next like is throwing an error
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 

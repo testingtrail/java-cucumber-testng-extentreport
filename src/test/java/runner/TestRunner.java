@@ -52,7 +52,7 @@ public class TestRunner extends AbstractTestNGCucumberTests{
             Reporter.setSystemInfo("Machine", "Windows 10" + "64 Bit");
             Reporter.setSystemInfo("Selenium", "3.141.59");
             Reporter.setSystemInfo("Maven", "3.7.0");
-            Reporter.setSystemInfo("Java Version", "11");
+            Reporter.setSystemInfo("Java Version", "8");
             Reporter.setTestRunnerOutput("Sample test runner output message");
         }catch(Exception e){
             System.out.println("Hay un errooooor: " + e);

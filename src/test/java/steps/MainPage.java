@@ -40,8 +40,10 @@ public class MainPage {
 
     @Then("^I should see suggestion for my search$")
     public void iShouldSeeSuggestionForMySearch() throws Throwable {
+        // normalizer transforms Unicode text into an equivalent composed or decomposed form, allowing for easier
+        // sorting and searching of text.
         Assert.assertEquals(Normalizer.normalize(homepage.getSuggestions().substring(0,11),Normalizer.Form.NFD)
-                , Normalizer.normalize("Bistrots Et", Normalizer.Form.NFD));
+                , Normalizer.normalize("Bistrots et", Normalizer.Form.NFD));
     }
 
     @Given("^I look for an specific product in the menu$")

@@ -21,7 +21,7 @@ public class DriverHandler {
 
     private DriverHandler() {
         //String driverpath = new File("").getAbsolutePath();
-        System.setProperty("webdriver.chrome.driver", "C:\\Libs\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         //something is happening that the next like is throwing an error
         driver = new ChromeDriver();
         driver.manage().window().maximize();

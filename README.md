@@ -2,12 +2,16 @@ Smartbox french site testing
 =====================
 
 Selenium Java testing public Smartbox Franch site, using Java, Selenium, POM, TestNG, Cucumber,
-Singleton, dependecy injection and Cucumber reports.
+Singleton, dependency injection and Cucumber reports.
+
+Website: https://www.smartbox.com/fr/
 
 Note: Test results may vary as the website tends to change a lot.
 
 Author: Jorge Quiros Torres
 Date: 01/20/19
+
+Last updated: 03/06/2020
 
 Testing notes
 ------------

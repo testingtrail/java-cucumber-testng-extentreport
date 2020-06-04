@@ -36,6 +36,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -45,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 6, 2019 05:37:55 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jun 3, 2020 07:42:28 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,7 +61,9 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -116,7 +119,7 @@
                     <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -130,7 +133,7 @@
                     <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -141,10 +144,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='30%'><span class='strong'>3</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>10</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>5</span> others
                 </div>
             </div>
         </div>
@@ -162,11 +165,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Smartbox Boxes Display</span>
-						<span class='test-time'>Nov 6, 2019 05:37:55 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-time'>Jun 3, 2020 07:42:30 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -175,45 +178,92 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='skip'>
+<div class='scenario node' test-id='2' status='fail'>
     <div class='category-list'>
         <span class='category label'>@smoke</span>
     </div>
-    <span class='duration right label'>0h 0m 0s+16ms</span>
+    <span class='duration right label'>0h 0m 9s+75ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: As a Customer I search in the main field</div>
+        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: As a Customer I search in the main field</div>
     </div>
     <ul class='steps'>
-        <li test-id='3' class='node given skip' status='skip'>
-            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I am on the home page</div>
-                <div class="node-step">skipped</div>
+        <li test-id='3' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the home page</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='4' class='node when skip' status='skip'>
-            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When I look for specific product "bistrots" in search box</div>
-                <div class="node-step">skipped</div>
+        <li test-id='4' class='node when pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I look for specific product "bistrots" in search box</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='5' class='node then skip' status='skip'>
-            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then I should see suggestion for my search</div>
-                <div class="node-step">skipped</div>
+        <li test-id='5' class='node then fail' status='fail'>
+            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then I should see suggestion for my search</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="/Users/jorge.quiros/qa/Java projects/Java_Cucumber_testNG_ExtentReport/report/screenshots/As_a_Customer_I_search_in_the_main_field.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <textarea disabled class="code-block">java.lang.AssertionError: expected [Bistrots Et] but found [Bistrots et]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at steps.MainPage.iShouldSeeSuggestionForMySearch(MainPage.java:43)
+	at ✽.Then I should see suggestion for my search(boxesdisplay.feature:16)
+</textarea>
         </li>
     </ul>
 </div>
-<div class='scenario node' test-id='6' status='skip'>
+<div class='scenario node' test-id='6' status='fail'>
     <div class='category-list'>
         <span class='category label'>@smoke</span>
     </div>
-    <span class='duration right label'>0h 0m 0s+11ms</span>
+    <span class='duration right label'>0h 0m 17s+15ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: As a Customer I can search in the filter box of sub category page</div>
+        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: As a Customer I can search in the filter box of sub category page</div>
     </div>
     <ul class='steps'>
-        <li test-id='7' class='node given skip' status='skip'>
-            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I am on the home page</div>
-                <div class="node-step">skipped</div>
+        <li test-id='7' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the home page</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='8' class='node given skip' status='skip'>
-            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given I look for an specific product in the menu</div>
-                <div class="node-step">skipped</div>
+        <li test-id='8' class='node given fail' status='fail'>
+            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Given I look for an specific product in the menu</div>
+                <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacNotNamed', ip: 'fd77:edb1:8e99:0:b904:96c7:c7da:b7dd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/z7/gv8kchg16pj...}, goog:chromeOptions: {debuggerAddress: localhost:52373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: df628b635b6ad0005864a916f8312295
+*** Element info: {Using=xpath, value=//nav[1]/ul[@id='aut-header-menu']/li[1]/ul/li[2]/a[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at pages.Home.LookForSubitem(Home.java:87)
+	at steps.MainPage.iLookForAnSpecificProductInTheMenu(MainPage.java:49)
+	at ✽.Given I look for an specific product in the menu(boxesdisplay.feature:20)
+</textarea>
         </li>
         <li test-id='9' class='node when skip' status='skip'>
             <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Subcategory page product page appears</div>
@@ -281,14 +331,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
-						<span class='label others'>2</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -301,14 +351,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 6, 2019 05:37:55 PM</td>
+										<td>Jun 3, 2020 07:42:30 PM</td>
 										<td class='linked' test-id='2'>Smartbox Boxes Display.As a Customer I search in the main field</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 6, 2019 05:37:55 PM</td>
+										<td>Jun 3, 2020 07:42:41 PM</td>
 										<td class='linked' test-id='6'>Smartbox Boxes Display.As a Customer I can search in the filter box of sub category page</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -324,7 +374,134 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 3, 2020 07:42:39 PM</td>
+										<td class='linked' test-id='5'>Smartbox Boxes Display.As a Customer I search in the main field.Then I should see suggestion for my search</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Bistrots Et] but found [Bistrots et]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at steps.MainPage.iShouldSeeSuggestionForMySearch(MainPage.java:43)
+	at ✽.Then I should see suggestion for my search(boxesdisplay.feature:16)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchWindowException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 3, 2020 07:42:48 PM</td>
+										<td class='linked' test-id='8'>Smartbox Boxes Display.As a Customer I can search in the filter box of sub category page.Given I look for an specific product in the menu</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacNotNamed', ip: 'fd77:edb1:8e99:0:b904:96c7:c7da:b7dd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/z7/gv8kchg16pj...}, goog:chromeOptions: {debuggerAddress: localhost:52373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: df628b635b6ad0005864a916f8312295
+*** Element info: {Using=xpath, value=//nav[1]/ul[@id='aut-header-menu']/li[1]/ul/li[2]/a[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at pages.Home.LookForSubitem(Home.java:87)
+	at steps.MainPage.iLookForAnSpecificProductInTheMenu(MainPage.java:49)
+	at ✽.Given I look for an specific product in the menu(boxesdisplay.feature:20)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -350,19 +527,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 6, 2019 05:37:55 PM</div>
+					<div class='panel-lead'>Jun 3, 2020 07:42:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 6, 2019 05:37:55 PM</div>
+			 		<div class='panel-lead'>Jun 3, 2020 07:42:58 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+304ms</div>
+					<div class='panel-lead'>0h 0m 30s+847ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -380,7 +557,7 @@
 						<tr>
 							<td>@smoke</td>
 							<td>0</td>
-							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
 									0%
@@ -399,37 +576,37 @@
 			var statusGroup = {
                 parentCount: 1,
 				passParent: 0,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
+				skipParent: 0,
 				exceptionsParent: 1,
 				childCount: 2,
 				passChild: 0,
-				failChild: 0,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 2,
+				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 2,
 				grandChildCount: 10,
-				passGrandChild: 0,
-				failGrandChild: 0,
+				passGrandChild: 3,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 10,
+				skipGrandChild: 5,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 10,
+				exceptionsGrandChild: 7,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Smartbox Boxes Display":0.034
+			        "Smartbox Boxes Display":27.925
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
